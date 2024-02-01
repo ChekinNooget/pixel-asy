@@ -66,7 +66,7 @@ function changeColor() {
   temp = temp.split('"').join("");
   temp =
     `[asy]
-unitsize(1cm);
+unitsize(0.2cm);
 
 int[][] sprite = ` +
     temp +
