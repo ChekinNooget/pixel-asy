@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image to Asymptote</title>
+    <script type="text/javascript" src="colors.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--<img src="nugget.jpg"></img>-->
+    <div>credits to williama for asy code</div>
+    <input type="file" accept="image/jpeg, image/png, image/jpg" />
+    <button onclick="colorButtonPressed()">Click me</button>
+    <div class="image-group">
+      <output></output>
+      <canvas
+        style="display: none"
+        id="myCanvas"
+        onclick="openImage()"
+        title="Open image in new tab"
+        height="0"
+        width="0"
+      ></canvas>
+    </div>
+    <textarea readonly class="textarea"></textarea>
+  </body>
+  <script src="image-loader.js"></script>
+</html>
