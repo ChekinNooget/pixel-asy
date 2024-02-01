@@ -43,6 +43,7 @@ function getCanvas() {
 }
 var final = [];
 function changeColor() {
+  final = [];
   var allColors = ["RGB(255,255,255)"];
   var data;
   for (let i = 0; i < img.height; i++) {
@@ -85,6 +86,12 @@ fill(shift(j,i)*unitsquare,colors[sprite[height-i-1][j]]+miterjoin);
 
 [/asy]`;
   document.querySelector(".textarea").value = temp;
+  if (temp.length > 40000) {
+    document.querySelector(".head").textContent =
+      "warning: over 40k chars, exceeds aops post limit";
+  } else {
+    document.querySelector(".head").textContent = "copy and paste into aops";
+  }
 }
 
 function colorButtonPressed() {
